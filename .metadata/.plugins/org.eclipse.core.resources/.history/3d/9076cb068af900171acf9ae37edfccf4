@@ -1,0 +1,45 @@
+
+public class MyLinkedList implements Iterable<Integer>{
+
+	private int theSize;
+	private int modCount;
+	private Node firstNode;
+	private Node lastNode;
+	
+	// Nested class, not an inner class.
+	private static class Node<Integer> {
+		public Integer data;
+		public Node<Integer> previous;
+		public Node<Integer> next;
+		
+		public Node(Integer data, Node<Integer> previous, Node<Integer> next) {
+			this.data = data;
+			this.previous = previous;
+			this.next = next;
+		}
+	}
+	
+	public MyLinkedList() {
+		doClear();
+	}
+		
+	// Creates empty linkedlist with empty first and last nodes
+	public void doClear() {
+		theSize = 0;
+		modCount = 0;
+		firstNode = new Node<Integer>(null, null, null);
+		lastNode = new Node<Integer>(null, firstNode, null);
+		firstNode.next = lastNode;
+	}
+	
+	public void clear() {
+		doClear();
+	}
+		
+	
+	
+	
+	
+	
+	
+}

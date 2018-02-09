@@ -1,0 +1,33 @@
+package messingaround;
+import java.util.HashSet;
+
+public class MessingAround {
+	HashSet<Integer> hashy = new HashSet<>();
+	
+	
+	
+	public static void main(String[] args) {
+		int [] list = {1, 2, 3, 8};
+		MessingAround m = new MessingAround();
+		System.out.println(m.findSum(list, 9));
+		System.out.println(m.findSum(list, 10));
+		System.out.println(m.findSum(list, 11));
+		System.out.println(m.findSum(list, 12));
+	}
+	
+	
+	
+	public boolean findSum(int[] nums, int sum) {
+		
+		for (int i = 0; i < nums.length; i++) {
+			hashy.add(sum - nums[i]);
+			if (hashy.contains(nums[i])) {
+				return true;
+			}
+		}
+		
+		
+		return false;
+	}
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;ArrayBag&apos;" deleteContents="false" description="Delete resource &apos;ArrayBag&apos;" element1="/ArrayBag" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1506814736957"/>
+</session>

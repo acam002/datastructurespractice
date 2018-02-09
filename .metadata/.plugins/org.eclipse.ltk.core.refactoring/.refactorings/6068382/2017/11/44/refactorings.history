@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 3 elements to &apos;Deque/src/maindeque&apos;&#x0D;&#x0A;- Original project: &apos;6068382&apos;&#x0D;&#x0A;- Destination element: &apos;Deque/src/maindeque&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Node.java&#x0D;&#x0A;     LinkedStack.java&#x0D;&#x0A;     StackTester.java&#x0D;&#x0A;- Update references to refactored element" description="Move files" destination="=Deque/src&lt;maindeque" element1="6068382 - Assignment2/Assignment2/Exercise 2/Node.java" element2="6068382 - Assignment2/Assignment2/Exercise 2/LinkedStack.java" element3="6068382 - Assignment2/Assignment2/Exercise 2/StackTester.java" files="3" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1509777054315" units="0" version="1.0"/>
+</session>

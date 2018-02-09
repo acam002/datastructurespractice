@@ -1,0 +1,46 @@
+package messingaround;
+import java.util.HashSet;
+
+public class MessingAround {
+	HashSet<Integer> hash = new HashSet<>(100);
+	
+	
+	
+	public static void main(String[] args) {
+		int [] list = {2, 1, 8, 11};
+		MessingAround m = new MessingAround();
+		System.out.println(m.findSum(list, 10));
+		
+		
+		System.out.println(m.hash);
+		System.out.println(m.isPalindrome("racecar"));
+		System.out.println(m.isPalindrome("hello"));
+	}
+	
+	
+	
+	public boolean findSum(int[] nums, int sum) {
+		
+		for (int i = 0; i < nums.length; i++) {
+			hash.add(sum - nums[i]);
+			if (hash.contains(nums[i])) {
+				return true;
+			}
+		}
+		
+		
+		return false;
+	}
+	
+	public boolean isPalindrome(String str) {
+		
+		if (str.length() == 0 || str.length() == 1) {
+			return true;
+		}
+		System.out.println(str);
+		if (str.charAt(0) == str.charAt(str.length() - 1)) {
+			return isPalindrome(str.substring(1, str.length() - 1));
+		}
+		return false;
+	}
+}
